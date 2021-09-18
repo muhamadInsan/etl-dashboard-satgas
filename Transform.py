@@ -118,7 +118,9 @@ vaksinasi = df[['nm_petugas', 'no_tiket', 'nik', 'nama', 'nip', 'jk',
 
 vaksinasi.drop(labels='index', axis=1, inplace=True)
 
+# Set vaksin name with CoronaVac
 vaksinasi.vaksin = 'CoronaVac'
+# delete white space
 vaksinasi[['nik', 'no_tiket', 'nip', 'tlp']] = vaksinasi[[
     'nik', 'no_tiket', 'nip', 'tlp']].replace(' ', '')
 vaksinasi.nama = vaksinasi.nama.str.upper().str.strip()
