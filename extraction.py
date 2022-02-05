@@ -11,7 +11,7 @@ import pycurl
 def getDataVaksinasiRedcap(mulai_tgl, selesai_tgl):
     buf = BytesIO()
     data = {
-        'token': '34007DB1F132A7B31726842F14CD7224',
+        'token': 'your-token-redcap',
         'content': 'record',
         'format': 'json',
         'type': 'flat',
