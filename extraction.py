@@ -56,7 +56,7 @@ def getDataIsolasi():
     # -----------------------credential-------------------------------------
 
     # The ID and range of a sample spreadsheet.
-    SAMPLE_SPREADSHEET_ID = '1ag9DWMyXoaj00G1xPelAe5f3coEjyaJ-l-wJ64UOhDw'
+    SAMPLE_SPREADSHEET_ID = 'spreadsheet_id'
 
     service = build('sheets', 'v4', credentials=creds)
 
@@ -93,7 +93,7 @@ def getDataTreatment():
     # -----------------------credential-------------------------------------
 
     # The ID and range of a sample spreadsheet.
-    SAMPLE_SPREADSHEET_ID = '1ag9DWMyXoaj00G1xPelAe5f3coEjyaJ-l-wJ64UOhDw'
+    SAMPLE_SPREADSHEET_ID = 'spreadsheet_id'
 
     service = build('sheets', 'v4', credentials=creds)
 
@@ -121,7 +121,7 @@ def getDataTreatment():
 def getDataLacakKontak():
     buf = BytesIO()
     data = {
-        'token': '5AF2E80C3F583A27BF3D7F5F00A7D5D2',
+        'token': 'your_redcap_token',
         'content': 'report',
         'format': 'json',
         'report_id': '171',
@@ -160,7 +160,7 @@ def logbookTreatment(sheet_name):
     service = Create_Service(CLIENT_SECRET_FILE, API_NAME, API_VERSION, SCOPES)
 
     # REPLACE FILE LOGBOOK TREATMENT
-    file_id_treatment = '17d7RfE9a_DxqdF6Mnk_E3vDjUEMdaGOTTUl9WL9UCPM'
+    file_id_treatment = 'spreadsheet_id'
 
     response = service.spreadsheets().values().batchGet(
         spreadsheetId=file_id_treatment,
@@ -175,7 +175,7 @@ def relawanTreatment():
     service = Create_Service(CLIENT_SECRET_FILE, API_NAME, API_VERSION, SCOPES)
 
     # REPLACE FILE RELAWAN TREATMENT
-    file_id_treatment = '1iJftpBj8Iasm-1dsHyvsmao7ypF7uTAsvUQue4CWKfA'
+    file_id_treatment = 'spreadsheet_id'
 
     response = service.spreadsheets().values().get(
         spreadsheetId=file_id_treatment,
@@ -191,7 +191,7 @@ def getDataEmg():
     service = Create_Service(CLIENT_SECRET_FILE, API_NAME, API_VERSION, SCOPES)
 
     # REPLACE FILE EMERGENCY
-    file_id_emg = '1GXLQAfsn-yhGeA3X2euHpGx9ySDhd60_5PdGs5jVKmg'
+    file_id_emg = 'spreadsheet_id'
 
     valueRanges_Body = [
         'Keluhan_CallCenter',
@@ -212,7 +212,7 @@ def DataTesting(valueRanges_Body=[]):
     service = Create_Service(CLIENT_SECRET_FILE, API_NAME, API_VERSION, SCOPES)
 
     # REPLACE FILE TESTING
-    file_id_treatment = '1yZpHnfCHzZK1dSWuTBHw32q2C8AdhXNsx732fBjhNdY'
+    file_id_treatment = 'spreadsheet_id'
 
     response = service.spreadsheets().values().batchGet(
         spreadsheetId=file_id_treatment,
