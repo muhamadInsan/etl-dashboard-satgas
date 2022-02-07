@@ -11,7 +11,7 @@ SCOPES = ['https://www.googleapis.com/auth/drive']
 service = Create_Service(CLIENT_SECRET_FILE, API_NAME, API_VERSION, SCOPES)
 
 # REPLACE FILE VAKSINASI
-file_id_vaksinasi = '1RYQE3GyrR6uq1ssmz4GW1_tQic66XZHCpIM69iATAIY'
+file_id_vaksinasi = 'spreadsheet_id'
 file_name_vaksinasi = 'data-vaksinasi.xlsx'
 mime_type = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
 
@@ -25,7 +25,7 @@ service.files().update(
 
 
 # REPLACE FILE ISOLASI
-file_id_isolasi_pupr = '1fNhE8BAH7F4Oh3ggqtshVVmmDgKPqwWlHBqXZxes0vo'
+file_id_isolasi_pupr = 'spreadsheet_id'
 file_name_isolasi_pupr = 'data-isolasi.xlsx'
 
 media_isolasi_pupr = MediaFileUpload(
@@ -37,7 +37,7 @@ service.files().update(
 ).execute()
 
 # REPLACE FILE TREATMENT
-file_id_treatment = '1ycaHlaWNYZBaWx68j7kluAQNhpD5uU4vGhMaUuXeraE'
+file_id_treatment = 'spreadsheet_id'
 file_name_treatment = 'dataset-treatment.xlsx'
 
 media_treatment = MediaFileUpload(
@@ -49,7 +49,7 @@ service.files().update(
 ).execute()
 
 # REPLACE FILE LACAK KONTAK
-file_id_lacakkontak = '1q1aQH66y9nnbz2yU6EKSDT3BEi32TA1AvWAZPUKvsdU'
+file_id_lacakkontak = 'spreadsheet_id'
 file_name_lacakkontak = 'dataset-lacakkontak.xlsx'
 
 media_lacakkontak = MediaFileUpload(
@@ -61,7 +61,7 @@ service.files().update(
 ).execute()
 
 # REPLACE FILE LOGBOOK TREATMENT
-file_id_logbook_treatment = '1Omyomgps234ZblRWJjf00NIE6HjUrP5SM7DYQvpeJOQ'
+file_id_logbook_treatment = 'spreadsheet_id'
 file_name_logbook_treatment = 'dataset-logbook-treatment.xlsx'
 
 media_logbook_treatment = MediaFileUpload(
@@ -72,7 +72,7 @@ service.files().update(fileId=file_id_logbook_treatment,
 
 
 # REPLACE FILE BOR
-file_id_bor = '1ltCKGll9pqu6Y76KBRd6ELF7RaphVC8mZLJ0YMNhYYM'
+file_id_bor = 'spreadsheet_id'
 file_name_bor = 'dataset-isolasi-bor.xlsx'
 
 media_bor = MediaFileUpload(
@@ -81,7 +81,7 @@ service.files().update(fileId=file_id_bor, media_body=media_bor).execute()
 
 
 # REPLACE FILE EMG
-file_id_emg = '1YavLkLLsU_gOWqHKrGauE03Ei6HiVFpEdigc5i0LwR4'
+file_id_emg = 'spreadsheet_id'
 file_name_emg = 'dataset-emergency.xlsx'
 
 media_emg = MediaFileUpload(
@@ -89,7 +89,7 @@ media_emg = MediaFileUpload(
 service.files().update(fileId=file_id_emg, media_body=media_emg).execute()
 
 # REPLACE FILE EMG
-file_id_testing = '1lVSX8niDZzmb_4AZNAK2UcLRAPhsNB4xXuH0uqK8Sfs'
+file_id_testing = 'spreadsheet_id'
 file_name_testing = 'dataset-testing.xlsx'
 
 media_testing = MediaFileUpload(
